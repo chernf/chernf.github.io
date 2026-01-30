@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -34,42 +33,30 @@
 <main class="content" id="main">
 <img alt="LICS banner" class="banner" src="assets/banner.jpg"/>
 <h1>Distributed learning</h1><p class="muted"><a href="index.html#research">← Back to Research interests</a></p>
-<p class="muted">
-  Distributed learning studies how to train models when data and computation are spread across devices or agents.
-  This includes <strong>decentralized learning</strong>, <strong>federated learning</strong>, and learning with communication constraints,
-  with an emphasis on reliability, privacy, and performance analysis.
-</p>
-<img alt="Distributed learning header illustration" class="hero" src="assets/research/learning.jpg"/>
+<p class="muted">Our learning direction focuses on reinforcement learning (RL) and meta-learning for decision-making and adaptive control, with an emphasis on networked and multi-agent systems.</p>
+<img alt="Learning (reinforcement &amp; meta learning) header illustration" class="hero" src="assets/research/learning.jpg"/>
 <h2>What this field is about</h2>
-<ul>
-<li>Learning with <strong>distributed data</strong> (no single machine sees all data).</li>
-<li>Communication-efficient training: fewer messages, less bandwidth, robust to dropouts.</li>
-<li>Privacy-aware learning and trustworthy model updates.</li>
-</ul>
+<ul><li>Reinforcement learning: learn a policy π(a|s) by interacting with an environment and maximizing long-term return.</li><li>RL for control: data-driven controllers for tracking, stabilization, and planning under uncertainty and constraints.</li><li>Multi-agent / networked RL: coordination and communication among agents (e.g., formation, coverage, and distributed decision-making).</li><li>Meta-learning: learn a good initialization or update rule so a policy/controller adapts to a new task with only a few samples or gradient steps.</li><li>Key themes: safety &amp; stability, sample efficiency, and generalization across tasks and operating conditions.</li></ul>
 <h2>Illustrations</h2>
 <div class="grid grid2">
 <div class="card">
-<img alt="Animated illustration of federated learning rounds" src="assets/research-pages/learning_federated.gif"/>
+<img alt="Animated illustration of reinforcement learning loop and learning curve" src="assets/research-pages/learning_federated.gif"/>
 <div class="pad">
-<h3>Federated learning</h3>
-<p>Devices keep data locally and send model updates for aggregation (privacy-friendly collaboration).</p>
+<h3>Reinforcement learning (RL)</h3>
+<p>Agent–environment interaction, policy improvement, and a typical learning curve (episode return).</p>
 </div>
 </div>
 <div class="card">
-<img alt="Illustration of learning with message passing on a network" src="assets/research-pages/learning_message_passing.jpg"/>
+<img alt="Illustration of meta-learning (MAML-style) for fast adaptation" src="assets/research-pages/learning_message_passing.jpg"/>
 <div class="pad">
-<h3>Learning over graphs</h3>
-<p>Local learning plus neighbor messages enables robust performance in decentralized settings.</p>
+<h3>Meta-learning</h3>
+<p>Meta-training across tasks to obtain an initialization that adapts quickly to a new task (few-shot).</p>
 </div>
 </div>
 </div>
 <h2>Typical applications</h2>
-<ul>
-<li>Edge AI, collaborative perception, and smart-city sensing.</li>
-<li>Networked robotics and autonomous systems with distributed intelligence.</li>
-<li>Learning-based control and optimization in cyber-physical systems.</li>
-</ul>
-<h2>Related reading</h2><ul class="reading"><li><a href="https://arxiv.org/abs/1602.05629" rel="noopener" target="_blank">Communication-Efficient Learning of Deep Networks from Decentralized Data (FedAvg)</a> (AISTATS, 2017).</li><li><a href="https://scholar.google.com/scholar?q=decentralized%20stochastic%20gradient%20descent%20Lian%202017" rel="noopener" target="_blank">Decentralized Stochastic Gradient Descent</a> (2017).</li><li><a href="https://scholar.google.com/scholar?q=Hu%20Wenbo%20Chen%20Fei%20model-reference%20reinforcement%20learning%20control%20IEEE%20Transactions%20on%20Cybernetics%202023" rel="noopener" target="_blank">Multi-ASV coordinated tracking with unknown dynamics and input underactuation via model-reference reinforcement learning control</a> (IEEE TCYB, 2023).</li><li><a href="https://www.emerald.com/ftsys/article-abstract/6/4/339/1332408/On-the-Control-of-Multi-Agent-Systems-A-Survey" rel="noopener" target="_blank">On the Control of Multi-Agent Systems: A Survey</a> (FnT Systems and Control, 2019).</li></ul><p class="muted">Interested in joining? See <a href="openings.html">Openings</a>.</p>
+<ul><li>Learning-based control for robotics and autonomous vehicles (navigation, tracking, manipulation).</li><li>Adaptive decision-making in networked systems (smart grids, smart manufacturing, traffic and mobility).</li><li>Multi-agent coordination: formation, coverage, and task allocation with learned policies.</li><li>Rapid adaptation to changing dynamics or environments via meta-learning (few-shot personalization).</li></ul>
+<h2>Related reading</h2><ul class="reading"><li><a href="http://incompleteideas.net/book/the-book-2nd.html">Sutton &amp; Barto. Reinforcement Learning: An Introduction (2nd ed.).</a></li><li><a href="https://arxiv.org/abs/1703.03400">Finn, Abbeel &amp; Levine. Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks (MAML), 2017.</a></li><li><a href="https://arxiv.org/abs/1707.06347">Schulman et al. Proximal Policy Optimization Algorithms (PPO), 2017.</a></li><li><a href="https://arxiv.org/abs/1801.01290">Haarnoja et al. Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning, 2018.</a></li><li><a href="https://arxiv.org/abs/1611.02779">Duan et al. RL^2: Fast Reinforcement Learning via Slow Reinforcement Learning, 2016.</a></li><li><a href="https://scholar.google.com/scholar?q=Multi-ASV%20coordinated%20tracking%20model-reference%20reinforcement%20learning%20control%20Fei%20Chen">Hu Wenbo; Fei Chen*; et al. Multi-ASV coordinated tracking via model-reference reinforcement learning control (IEEE TCYB, 2023).</a></li><li><a href="https://www.emerald.com/ftsys/article-abstract/6/4/339/1332408/On-the-Control-of-Multi-Agent-Systems-A-Survey">Fei Chen; Wei Ren. On the Control of Multi-Agent Systems: A Survey (FnT Systems and Control, 2019).</a></li><li><a href="https://scholar.google.com/scholar?q=multi-agent%20reinforcement%20learning%20survey">Multi-agent reinforcement learning survey (select one as a starting point).</a></li></ul><p class="muted">Interested in joining? See <a href="openings.html">Openings</a>.</p>
 <div class="footer">© 2026 Professor Fei Chen · Laboratory for Information and Control Systems (LICS)</div>
 </main>
 </div>
