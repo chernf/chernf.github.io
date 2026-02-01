@@ -101,22 +101,24 @@ a:visited{ color: #4e2376; }
 }
 .brand .title{
   margin-top: 6px;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 1.25;
   color: var(--muted);
 }
 .brand .meta{
   margin-top: 6px;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 1.25;
   color: var(--muted);
 }
 
 
 
 .brand .social{
-  margin-top: 8px;
-  font-size: 14px;
+  margin-top: 10px;
+  font-size: 15px;
   color: var(--muted);
-  line-height: 1.2;
+  line-height: 1.25;
 }
 .brand .social a{
   font-weight: 600;
